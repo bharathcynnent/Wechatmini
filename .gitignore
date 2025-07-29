@@ -1,2 +1,16 @@
-project.config.json
-project.private.config.json
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
+
+# Build
+dist/
+build/
+
+# WeChat specific
+.project.config.json
+.project.private.config.json
