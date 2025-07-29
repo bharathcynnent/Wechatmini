@@ -1,0 +1,7 @@
+<view class="home-page">
+  <view class="header-area">
+    <app-header></app-header>
+    <app-navbar title="Dashboard"></app-navbar>
+  </view>
+  <app-footer></app-footer>
+</view>

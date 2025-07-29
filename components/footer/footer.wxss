@@ -1,0 +1,22 @@
+.app-footer-container {
+  display: flex;
+  width: 320px;
+  margin-top: 30px;
+}
+.logo {
+  height: 15px;
+  width: 50px;
+}
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+}
+text {
+  font-size: 8px;
+}
+.company-info {
+  margin: -22px;
+}

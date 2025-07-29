@@ -1,0 +1,24 @@
+.users-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.users-scroll {
+  flex: 1;
+  overflow: scroll;
+}
+.user-details {
+  display: flex;
+  font-size: 12px;
+}
+.users-container {
+  display: inline-block;
+  margin: 10px;
+}
+image {
+  width: 128px;
+  height: 128px;
+}
+app-footer {
+  margin-bottom: 10px;
+}

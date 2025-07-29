@@ -1,0 +1,123 @@
+/**index.wxss**/
+.login-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.login-container {
+  padding: 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.welcome-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #126F67;
+  text-align: left;
+}
+.login-description {
+  font-size: 14px;
+  color: #747474;
+  text-align: left;
+  line-height: 1.5;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+.input-label {
+  font-size: 16px;
+  color: #333333;
+  text-align: left;
+  margin: 6px;
+}
+.email-input {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 16px;
+  flex: 1
+}
+.password-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.password-input {
+  flex: 1;
+  border: none;
+  font-size: 16px;
+  padding: 5px;
+}
+.eye-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.remember-forgot-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.remember-me {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+.remember-me checkbox {
+  margin-right: 6px;
+}
+.forgot-password {
+  color: #1976d2;
+  font-size: 12px;
+  border: none;
+  background: none;
+}
+.login-button {
+  background-color: #351ba8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.login-button:active {
+  background-color: #C0C0C0;
+}
+.separator-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px;
+}
+.separator {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+.separator-text {
+  color: #777;
+  font-size: 10px;
+}
+.create-account-button {
+  background-color: #FFFFFF;
+  color: #126F67;
+  border: 1px solid #126F67;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+}
+.create-account-button:active {
+  background-color: #E0ECEB;
+}
+app-footer {
+  margin-top: 25px;
+}

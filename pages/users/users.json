@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "app-header": "/components/header/header",
+    "app-navbar": "/components/navigation-bar/navigation-bar",
+    "app-footer": "/components/footer/footer"
+  }
+}

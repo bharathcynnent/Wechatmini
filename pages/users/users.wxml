@@ -1,0 +1,18 @@
+<view class="users-page">
+  <view class="header-area">
+    <app-header></app-header>
+    <app-navbar title="Users"></app-navbar>
+  </view>
+  <scroll-view scroll-x="true" scroll-y="true" class="users-scroll">
+    <view class="users-container" wx:for="{{users}}" wx:key="id">
+      <text class="user-details">Id: {{item.id}}</text>
+      <text class="user-details">User Name: {{item.username}}</text>
+      <text class="user-details">Age: {{item.age}}</text>
+      <text class="user-details">Gender: {{item.gender}}</text>
+      <text class="user-details">Email: {{item.email}}</text>
+      <text class="user-details">Phone: {{item.phone}}</text>
+      <image src="{{item.image}}"/>
+    </view>
+  </scroll-view>
+  <app-footer></app-footer>
+</view>

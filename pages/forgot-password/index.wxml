@@ -1,0 +1,15 @@
+<view class="forgot-password-page">
+  <view class="forgot-password-container">
+    <text class="forgot-password-heading">Forgot Password</text>
+    <text class="forgot-password-description">Please enter your email address to receive instructions on resetting your password.</text>
+  </view>
+  <view class="input-group">
+    <label class="input-label">Email Address</label>
+    <input id="email" class="input-field" type="email" placeholder="Enter Email Id" bindinput="onEmailInput" value="{{email}}" />
+  </view>
+  <view class="button-container">
+    <button class="cancel-button" bindtap="cancelAction">Cancel</button>
+    <button class="send-email-button" bindtap="validateAndSendEmail">Send Email</button>
+  </view>
+  <app-footer></app-footer>
+</view>

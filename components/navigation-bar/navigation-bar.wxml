@@ -1,0 +1,3 @@
+<view class="navbar">
+  <text class="title">{{title}}</text>
+</view>

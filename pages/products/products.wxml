@@ -1,0 +1,30 @@
+<view class="products-page">
+  <view class="header-area">
+    <app-header></app-header>
+    <app-navbar title="Products"></app-navbar>
+  </view>
+  <scroll-view scroll-x="true" scroll-y="true" class="products-scroll">
+    <view class="products-container">
+    <view class="table">
+      <view class="table-header">
+        <view class="table-cell">Id</view>
+        <view class="table-cell">Title</view>
+        <view class="table-cell">Description</view>
+        <view class="table-cell">Category</view>
+        <view class="table-cell">Price</view>
+      </view>
+      <view class="table-row" wx:for="{{products}}" wx:key="id">
+        <view class="table-cell">{{item.id}}</view>
+        <view class="table-cell">{{item.title}}</view>
+        <view class="table-cell">{{item.description}}</view>
+        <view class="table-cell">{{item.category}}</view>
+        <view class="table-cell">{{item.price}}</view>
+      </view>
+    </view>
+      <!-- <view wx:for="{{products}}" wx:key="id" class="product-item">
+        <text>{{item.title}} - ${{item.price}}</text>
+      </view> -->
+    </view>
+  </scroll-view>
+  <app-footer></app-footer>
+</view>

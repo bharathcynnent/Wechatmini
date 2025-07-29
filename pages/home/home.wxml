@@ -1,0 +1,7 @@
+<view class="home-page">
+  <image class="bg-img" src="/assets/Group 19209.svg" mode="aspectFill"></image>
+  <view class="content">
+    <image class="logo-img" src="/assets/TSK-34139 Ansell SafetyConnect_colour.svg" mode="widthFix"></image>
+    <button class="home-button" bindtap="goToLoginPage">Login & Create Account</button>
+  </view>
+</view>

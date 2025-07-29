@@ -1,0 +1,40 @@
+<view class="login-page">
+  <view class="login-container">
+    <text class="welcome-heading">Create an Account</text>
+    <text class="login-description">Please fill in the details below to create your new account.</text>
+    
+    <view class="input-group">
+      <label class="input-label">Full Name</label>
+      <input class="email-input" type="text" placeholder="Enter Full Name" bindinput="onNameInput" value="{{name}}" />
+
+      <label class="input-label">Email Address</label>
+      <input class="email-input" type="email" placeholder="Enter Email Id" bindinput="onEmailInput" value="{{email}}" />
+
+      <label class="input-label">Password</label>
+      <view class="password-container">
+        <input class="password-input" password="{{isPassword}}" type="text" placeholder="Enter Password" bindinput="onPasswordInput" value="{{password}}" />
+        <image class="eye-icon" src="{{isPassword ? '/assets/eye-slash-regular.svg' : '/assets/open-eye.svg'}}" bindtap="togglePassword" />
+      </view>
+    </view>
+
+    <view class="remember-forgot-row">
+      <checkbox-group bindchange="onTermsAgreeChange">
+        <label class="remember-me">
+          <checkbox value="agree" checked="{{termsAgreed}}" /> I agree to the terms & conditions
+        </label>
+      </checkbox-group>
+    </view>
+
+    <button class="login-button" disabled="{{!name || !email || !password || !termsAgreed}}" bindtap="onRegister">Register</button>
+    <view class="separator-container">
+      <view class="separator"></view>
+      <text class="separator-text">Or</text>
+      <view class="separator"></view>
+    </view>
+    <view class="login-link">
+      <text>Already have an account? </text>
+      <text class="link" bindtap="goToLogin">Login</text>
+    </view>
+  </view>
+  <app-footer></app-footer>
+</view>

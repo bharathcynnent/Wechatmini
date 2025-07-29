@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="login-page">
+  <view class="login-container">
+    <text class="welcome-heading">Welcome back!</text>
+    <text class="login-description">You can use existing Ansell Chemical Guardian platform login credentials to access Ansell Services Hub platform.</text>
+    <view class="input-group">
+      <label class="input-label">Email Address</label>
+      <input id="email" class="email-input" type="email" placeholder="Enter Email Id" bindinput="onEmailInput" value="{{email}}"/>
+      <label class="input-label">Password</label>
+      <view class="password-container">
+        <input id="password" class="password-input" password="{{isPassword}}" type="text" placeholder="Enter Password" bindinput="onPasswordInput" value="{{password}}"/>
+        <image class="eye-icon" src="{{isPassword ? '/assets/eye-slash-regular.svg' : '/assets/open-eye.svg'}}" bindtap="togglePassword" />
+      </view>
+    </view>
+    <view class="remember-forgot-row">
+      <checkbox-group bindchange="onRememberChange">
+        <label class="remember-me">
+          <checkbox value="remember" checked="{{rememberMe}}" value="{{rememberme}}"/> Keep me logged in
+        </label>
+      </checkbox-group>
+      <button class="forgot-password" bindtap="onForgotPassword">Forgot Password</button>
+    </view>
+    <button class="login-button" disabled="{{!email || !password || !rememberMe}}" bindtap="onLogin">Login</button>
+    <view class="separator-container">
+      <view class="separator"></view>
+      <text class="separator-text">Or</text>
+      <view class="separator"></view>
+    </view>
+    <button class="create-account-button"  bindtap="onCreateAccount">Create an account</button>
+  </view>
+  <app-footer></app-footer>
+</view>

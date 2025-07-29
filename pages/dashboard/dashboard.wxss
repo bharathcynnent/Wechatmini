@@ -1,0 +1,16 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+.header-area {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+app-navbar {
+  margin-top: 10px;
+  text-align: left;
+}
+app-footer {
+  margin-top: 345px;
+}

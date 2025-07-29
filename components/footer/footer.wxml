@@ -1,0 +1,7 @@
+<view class="app-footer-container">
+  <image class="logo" src="/assets/OIP.jfif" />
+  <view class="footer-info">
+    <text class="company-info">© 2024 Ansell Limited. All rights reserved.</text>
+    <text>Version 2023.03.24</text>
+  </view>
+</view>
