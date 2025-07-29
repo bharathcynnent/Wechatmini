@@ -1,3 +1,2 @@
- .project.config.json
- .project.private.config.json
- *.log
+project.config.json
+project.private.config.json
