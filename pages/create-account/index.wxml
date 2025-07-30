@@ -36,5 +36,4 @@
       <text class="link" bindtap="goToLogin">Login</text>
     </view>
   </view>
-  <app-footer></app-footer>
 </view>

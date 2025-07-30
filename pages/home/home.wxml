@@ -1,7 +1,12 @@
 <view class="home-page">
-  <image class="bg-img" src="/assets/Group 19209.svg" mode="aspectFill"></image>
+  <image class="bg-img" src="/assets/image (2).png" mode="aspectFill"></image>
   <view class="content">
-    <image class="logo-img" src="/assets/TSK-34139 Ansell SafetyConnect_colour.svg" mode="widthFix"></image>
-    <button class="home-button" bindtap="goToLoginPage">Login & Create Account</button>
+    <view class="logo">
+      <text class="brand">Ansell</text>
+      <text class="guardian">GUARDIAN</text>
+      <text class="reg">®</text>
+      <text class="chemical">Chemical</text>
+    </view>
+    <button class="home-button" bindtap="goToLoginPage">Sign in & Register</button>
   </view>
 </view>

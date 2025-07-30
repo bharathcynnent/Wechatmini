@@ -82,7 +82,7 @@
   background: none;
 }
 .login-button {
-  background-color: #351ba8;
+  background-color: #126F67;
   color: white;
   border: none;
   border-radius: 6px;

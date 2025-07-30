@@ -1,19 +1,53 @@
+
 <view class="app-header-container">
   <view class="menu-bar {{menuVisible ? 'active' : ''}}" bindtap="toggleMenu">
     <view class="line"></view>
     <view class="line"></view>
     <view class="line"></view>
   </view>
-  <image class="logo" src="/assets/ansell_safeconnect_logo.svg" />
+
+  <view class="logo-header">
+    <text class="headerbrand">Ansell</text>
+    <text class="headerguardian">GUARDIAN</text>
+    <text class="headerchemical">Chemical</text>
+  </view>
+
   <view class="search-bar">
     <icon type="search" size="13"></icon>
-    <input type="text" placeholder="Search here" />
+    <input type="text" placeholder="Search here"
+           bindinput="onSearchInput"
+           value="{{searchQuery}}" />
   </view>
   <image class="user-icon" src="/assets/user-solid.svg" />
 </view>
+
+<!-- Side Menu -->
 <view wx:if="{{menuVisible}}" class="side-menu">
   <view class="menu-item" bindtap="goHome">Home</view>
   <view class="menu-item" bindtap="goDashboard">Dashboard</view>
   <view class="menu-item" bindtap="goUsers">Users</view>
-  <view class="menu-item" bindtap="goProducts">Products</view>
+  <view class="menu-item" bindtap="goProducts">Added Products</view>
+</view>
+
+<!-- Search Suggestions -->
+<view wx:if="{{searchResults.length}}" class="search-suggestions">
+  <block wx:for="{{searchResults}}" wx:key="name">
+    <view class="suggestion-item"
+          bindtap="onSelectChemical"
+          data-chemical="{{item}}">
+      {{item.name}}
+    </view>
+  </block>
+</view>
+
+
+<!-- Popup for chemical actions -->
+<view wx:if="{{showPopup}}" class="popup-bg">
+  <view class="popup">
+    <view class="popup-title">{{selectedChemical.name}} Chemical</view>
+    <view class="popup-actions">
+      <button class="popup-btn" bindtap="onAddProduct">Add Products</button>
+      <button class="popup-btn" bindtap="onClosePopup">Cancel</button>
+    </view>
+  </view>
 </view>

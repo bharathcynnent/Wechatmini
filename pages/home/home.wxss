@@ -24,6 +24,38 @@
   font-size: 13px;
   padding: 12px;
   border-radius: 8px;
-  background-color: rgb(98, 104, 105);
-  color: antiquewhite;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.logo {
+  font-size: 30rpx;
+  display: flex;
+  align-items: baseline;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  margin-bottom: 20rpx;
+  justify-content: center;
+}
+
+.brand {
+  color: white;
+  text-align: center;
+  font-size: 50rpx;
+}
+
+.guardian {
+  color: #20b3aa;
+  font-weight: bold;
+  font-size: 50rpx;
+}
+
+.reg {
+  font-size: 20rpx;
+  vertical-align: super;
+  color: #20b3aa;
+}
+
+.chemical {
+  color: white;
+  font-size: 50rpx;
 }

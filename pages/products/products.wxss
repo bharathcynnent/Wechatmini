@@ -1,34 +1,12 @@
-.products-page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+.product-detail-container {
+  padding: 20rpx;
 }
-.products-scroll {
-  flex: 1;
-  overflow: scroll;
-}
-.table {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  border: 1px solid rgb(22, 1, 1);
-  width: 80vh;
-}
-.table-header {
-  display: flex;
-  flex-direction: row;
-  background-color: #5ddb43;
+.title {
+  font-size: 32rpx;
   font-weight: bold;
+  margin-bottom: 20rpx;
 }
-.table-row {
-  display: flex;
-  flex-direction: row;
-}
-.table-cell {
-  flex: 1;
-  padding: 8px;
-  text-align: left;
-}
-app-footer {
-  margin-bottom: 10px;
+.product-name {
+  font-size: 28rpx;
+  color: #333;
 }

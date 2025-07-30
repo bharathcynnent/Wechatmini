@@ -2,7 +2,7 @@
 <view class="login-page">
   <view class="login-container">
     <text class="welcome-heading">Welcome back!</text>
-    <text class="login-description">You can use existing Ansell Chemical Guardian platform login credentials to access Ansell Services Hub platform.</text>
+    <text class="login-description">You can use existing Ansell Services Hub platform login credentials to access Ansell Chemical Guardian.</text>
     <view class="input-group">
       <label class="input-label">Email Address</label>
       <input id="email" class="email-input" type="email" placeholder="Enter Email Id" bindinput="onEmailInput" value="{{email}}"/>
